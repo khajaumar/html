@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    form{
+        background-color: cornflowerblue;
+        width: 500px;
+        padding: 10px;
+        margin: 00px;
+        color: white;
+    }
+</style>
 <body>
     <h1>Input Types</h1>
     <form>
@@ -28,16 +37,28 @@
         <br><br>
     </form>
     <form>
-        <label>Date:</label>
-        <input type="datetime-local"><br><br>
+        <label>Date Of Birth:</label>
+        <input type="date"><br><br>
     </form>
 <form>
     <label>Age:</label>
     <input type="number" min="19" max="99" step="1"><br><br>
 </form>
 <form>
-    <label>Document</label>
-    <input type="file">
+    <label>Uid:</label>
+    <input type="file"><br>
+</form>
+<form>
+    <label>Hobbies</label>
+    <input type="checkbox" name="Reading"> Reading
+    <input type="checkbox" name="Eating"> Eating
+    <input type="checkbox" name="coding"> Coding
+    <input type="checkbox" name="sleeping"> Sleeping
+    <input type="checkbox" name="traveling"> Traveling
+</form>
+<form>
+    <button>Submit</button> <button>Clear</button>
+
 </form>
 </body>
 </html>
