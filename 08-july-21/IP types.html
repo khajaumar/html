@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function setStore(){
+        var nameData = document.getElementById("name");
+        var emailData = document.getElementById("email");
+        var passWordData = document.getElementById("password");
+        var colorData = document.getElementById("favColor");
+        sessionStorage.setItem("userName",nameData.value);
+        sessionStorage.setItem("userEmail",emailData.value);
+        sessionStorage.setItem("userPassword",passWordData.value);
+        sessionStorage.setItem("chooseColor",colorData.value);
+      }
+      function getStore(){
+        var nameData = document.getElementById("name");
+        var emailData = document.getElementById("email");
+        var passWordData = document.getElementById("password");
+        var colorData = document.getElementById("favColor");
+        nameData.value=sessionStorage.getItem("userName");
+        emailData.value=sessionStorage.getItem("userEmail");
+        passWordData.value=sessionStorage.getItem("userPassword");
+        colorData.value= sessionStorage.getItem("chooseColor");
+        document.getElementById("bStyle").style=`background-color:${sessionStorage.getItem("chooseColor")}`;
+      }
+      
+    </script>
+  </head>
+  <style>  
+    form {
+      background-color: grey;
+      width: 1300px;
+      padding: 10px;
+      margin: 00px;
+      color: white;
+    }
+    legend {
+      background-color: rgb(42, 165, 83);
+      color: tomato;
+      font-size: large;
+    }
+    nav {
+      background-color: darkblue;
+      padding: 20px;
+    }
+
+    a {
+      padding: 20px;
+      font-size: large;
+      color: white;
+    }
+
+    .search {
+      float: right;
+    }
+  </style>
+  <body id="bStyle">
+    <nav>
+      <a href="./IP types.html">registration</a>
+      <a href="./Home.html">home</a>
+      <a href="./image.html">product</a>
+      <a href="./aboutus.html">about us</a>
+      <a href="./contactus.html">contact us</a>
+      <input class="search" type="text" />
+    </nav>
+    <fieldset >
+      <legend>Registration Form</legend>
+      <h1>your Details</h1>
+      <form>
+        <label>Name:</label>
+        <input id="name" type="text" /><br /><br />
+      </form>
+      <form>
+        <label>Email:</label>
+        <input id="email" type="email" placeholder="enter your Email" />
+        <br /><br />
+      </form>
+      <form>
+        <label>password:</label>
+        <input id="password" type="password" />
+        <br /><br />
+      </form>
+      <form>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female <br /><br />
+      </form>
+      <form>
+        <label>Date Of Birth:</label>
+        <input type="date" /><br /><br />
+      </form>
+      <form>
+        <label>Age:</label>
+        <input type="number" min="19" max="99" step="1" /><br /><br />
+      </form>
+      <form>
+        <label>Uid:</label>
+        <input type="file" /><br />
+      </form>
+      <form>
+        <label>Hobbies</label>
+        <input type="checkbox" name="Reading" /> Reading
+        <input type="checkbox" name="Eating" /> Eating
+        <input type="checkbox" name="coding" /> Coding
+        <input type="checkbox" name="sleeping" /> Sleeping
+        <input type="checkbox" name="traveling" /> Traveling
+      </form>
+      <form>
+        <label >Favorite color</label>
+        <input id="favColor" type="color">
+        <button onclick="setStore()">Submit</button> <button>Clear</button></form>
+     
+    </fieldset>
+  </body>
+  <script>
+      getStore();
+  </script>
+</html>
