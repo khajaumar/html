@@ -1,0 +1,19 @@
+h1{
+    color: blue;
+    font-size: 50px;
+    background:linear-gradient(45deg,white,red,blue) ;
+    position: sticky;
+    top: 0px;
+    margin: -8px;
+}
+body{
+    background-image: url(./src1/Game_of_Thrones_title_card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h2{
+    background-color: white;
+    color: ;
+
+}

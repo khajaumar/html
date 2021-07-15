@@ -1,0 +1,80 @@
+nav{
+    background-color: darkcyan;
+    padding: 30px;
+    margin: -8px;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+a{
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+i{
+    padding: 5px;
+}
+table{
+    width: 700px;
+    padding: 20px;
+    margin: auto;
+}
+th{
+    background-color: tomato;
+    padding: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+td{
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+tr:nth-child(even){
+    background-color: rgb(250, 152, 250);
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: cornflowerblue;
+    color: white;
+}
+caption{
+    font-size: larger;
+}
+h1{
+    font-size: xx-large;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    letter-spacing: 10px;
+}
+div{
+    background-color: rgb(168, 173, 240);
+    margin: -8px;
+}
+.para{
+    background-color: khaki;
+    text-align: justify;
+    padding: 20px;
+}
+.gt{
+    padding: 10px;
+}
+.mark{
+    background-color: rgb(168, 241, 161);
+    margin: -8px;
+}
+figcaption{
+    text-align: center;
+    padding: 20px;
+    background-color: lightcoral;
+    color: white;
+    font-size: x-large;
+}
+.foot{
+    background-color: teal;
+}
+footer{
+    text-align: center;
+    font-size: x-large;
+}
