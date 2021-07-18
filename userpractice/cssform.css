@@ -1,0 +1,44 @@
+body{
+    background-image: url(../src1/gt2.jpg);
+    background-size: cover;
+}
+h2{
+    color: red;
+
+}
+.login{
+    background-color: rgba(255, 255, 255, 0.1);
+    width : 400px;
+    height: 500px;
+    margin:  150px auto;
+    border-radius: 50px;
+    box-shadow: 0 0 15px white;
+    text-align: center;
+
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: -90px;
+    padding-bottom: 100px;
+}
+input{
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    padding: 10px;
+}
+::placeholder{
+    color: salmon;
+}
+button{
+    width: 120px;
+    border-radius: 30px;
+    padding: 3px;
+}
+label{
+    color: red;
+    font-size: x-large;
+}
